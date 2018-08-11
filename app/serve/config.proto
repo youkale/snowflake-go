@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package snowflake.app.serve;
+option csharp_namespace = "Snowflake.App.Serve";
+option go_package = "serve";
+option java_package = "com.snowflake.app.serve";
+option java_multiple_files = true;
+
+
+message Request {
+    int64 node_id = 1;
+}
+
+message Response {
+    string id = 2;
+    string base32 = 3;
+    string base58 = 4;
+}
+
+
+service GenerateService {
+    rpc Generator (Request) returns (Response) {
+    }
+}

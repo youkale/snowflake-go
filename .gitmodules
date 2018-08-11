@@ -1,0 +1,6 @@
+[submodule "vendor/snowflake"]
+	path = vendor/snowflake
+	url = https://github.com/bwmarrin/snowflake.git
+[submodule "vendor/cmux"]
+	path = vendor/cmux
+	url = https://github.com/soheilhy/cmux.git
